@@ -4,8 +4,8 @@ from email.MIMEText import MIMEText
 from email.MIMEBase import MIMEBase
 from email import encoders
  
-fromaddr = "**INSERT YOUR EMAIL**"
-toaddr = "**INSERT YOUR EMAIL**"
+fromaddr = "INSERT EMAIL"
+toaddr = "INSERT EMAIL"
  
 msg = MIMEMultipart()
  
@@ -18,7 +18,7 @@ body = "TEXT YOU WANT TO SEND"
 msg.attach(MIMEText(body, 'plain'))
  
 filename = "log.txt"
-attachment = open("log.txt", "rb")
+attachment = open("./log.txt", "rb")
  
 part = MIMEBase('application', 'octet-stream')
 part.set_payload((attachment).read())
@@ -29,7 +29,7 @@ msg.attach(part)
  
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(fromaddr, "**INSERT YOUR PASSWORD**")
+server.login(fromaddr, "INSERT PASSWORD")
 text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()

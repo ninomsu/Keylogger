@@ -1,3 +1,4 @@
 @echo off
-start C:\Users\%USERNAME%\Documents\system_file\backgroundservice.exe 
+cd %USERPROFILE%\Documents\system_file
+start backgroundservice.exe 
 exit
